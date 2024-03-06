@@ -31,6 +31,10 @@ app.use(cors({
 
 app.use('/', router);
 
+app.get("/", (req,res)=>{
+    res.json("hello"); 
+})
+
 const server = http.createServer(app);
 
 const io = new Server(server, {

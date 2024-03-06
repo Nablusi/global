@@ -3,6 +3,7 @@
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.7",
     "@babel/node": "^7.22.19",
+    "@vercel/speed-insights": "^1.0.10",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "dotenv": "^16.3.1",
