@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(cors({
-    origin: process.env.CLIENT_URL,
+    origin: global-nine.vercel.app,
     credential: true
 }));
 
@@ -39,7 +39,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: process.env.CLIENT_URL,
+        origin: global-nine.vercel.app,
     }
 });
 
